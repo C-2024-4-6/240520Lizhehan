@@ -2,7 +2,7 @@
 using namespace std;
 int gcd(int a, int b)
 {
-	return (b ? a : gcd(b,a % b));
+	return (b==0) ?a : gcd(b,a % b);
 }
 void way(int a, int b, int& m, int& n)
 {
